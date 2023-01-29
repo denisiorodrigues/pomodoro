@@ -16,6 +16,10 @@ Comando para executar o EsLint e verificar a padronização do código
 ```
 npx eslint src --ext .ts,.tsx
 ```
+Corrigir todos os erros
+```
+npx eslint src --ext .ts,.tsx --fix
+```
 
 Configuração no VS para automatizar a padrinização do código
 
