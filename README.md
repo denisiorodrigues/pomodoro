@@ -6,6 +6,11 @@ Aplicação em react
 
 * ESLint e as configurações da Rocketseat (dependência de desenvolvimento) [2 Bibliotecas]
 * Utilizando o Styled-components para estilização dos componentes. [1 Biblioteca]
+* Para rotas vamos utilizar o `react-douter-dom`
+
+## Rotas
+Para rota funcionar, precisamos importar dentro do react-touter-dom o BrowserRouter, e envoltar toda a aplicação para a rota funcionar
+Aqui utliliza os components providers
 
 # ESLint
 
