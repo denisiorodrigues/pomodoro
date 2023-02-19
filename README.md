@@ -6,7 +6,10 @@ Aplicação em react
 
 * ESLint e as configurações da Rocketseat (dependência de desenvolvimento) [2 Bibliotecas]
 * Utilizando o Styled-components para estilização dos componentes. [1 Biblioteca]
-* Para rotas vamos utilizar o `react-douter-dom`
+* Para rotas vamos utilizar o `react-douter-dom`.
+* Para formulário vamos utilizar o `react-hook-form`.
+* para validação vaos utilizar o `Zod`. Instalação `npm i zod`
+* Utlizamos a biblioteca `@hookform/resolve` para a integração do `react-hook-form` com outras bibliotecas de validação. Instalação `npm i @hookform/resolvers`
 
 ## Rotas
 Para rota funcionar, precisamos importar dentro do react-touter-dom o BrowserRouter, e envoltar toda a aplicação para a rota funcionar
