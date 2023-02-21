@@ -10,6 +10,7 @@ Aplicação em react
 * Para formulário vamos utilizar o `react-hook-form`.
 * para validação vaos utilizar o `Zod`. Instalação `npm i zod`
 * Utlizamos a biblioteca `@hookform/resolve` para a integração do `react-hook-form` com outras bibliotecas de validação. Instalação `npm i @hookform/resolvers`
+* Utilizamos o `date-fns` para calcular os segundos com alta precisão. INstalação `npm i date-fns`
 
 ## Rotas
 Para rota funcionar, precisamos importar dentro do react-touter-dom o BrowserRouter, e envoltar toda a aplicação para a rota funcionar
