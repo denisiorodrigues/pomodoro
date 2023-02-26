@@ -4,9 +4,14 @@ import { CyclesContext } from "../..";
 import { CountdownContainer, Separator } from "./styles";
 
 export function Countdown() {
-  const { activeCycle, activeCycleId, markCurrentCycleAsFinished } = useContext(CyclesContext);
+  const { 
+      activeCycle,
+      activeCycleId,
+      markCurrentCycleAsFinished,
+      amountSecondPassed, 
+      setSecondsPassed 
+  } = useContext(CyclesContext);
 
-  const [amountSecondPassed, setAmountSecondPassed] = useState(0);
   const totalSeconds = activeCycle ? activeCycle.minutesAmount * 60 : 0;
   
   useEffect(() => {
@@ -18,10 +23,10 @@ export function Countdown() {
 
         if(scondsDifference >= totalSeconds){
           markCurrentCycleAsFinished()
-          setAmountSecondPassed(totalSeconds);
+          setSecondsPassed(totalSeconds);
           clearInterval(interval);
         } else {
-          setAmountSecondPassed(scondsDifference);
+          setSecondsPassed(scondsDifference);
         }
       }, 1000);
 
@@ -29,7 +34,7 @@ export function Countdown() {
         clearInterval(interval);
       }
     } 
-  }, [activeCycle, totalSeconds, activeCycleId, markCurrentCycleAsFinished]);
+  }, [activeCycle, totalSeconds, activeCycleId, setSecondsPassed, markCurrentCycleAsFinished]);
 
   const currentSeconds = activeCycle ? totalSeconds - amountSecondPassed : 0;
 
