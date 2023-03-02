@@ -52,6 +52,8 @@ export function CyclesContextProvider({ children } : CyclesContextProviderProps)
         }
       }),
     );
+
+    setActiveCycleId(null);
   }
 
   function createNewCycle(data: CreateCycleData) {
